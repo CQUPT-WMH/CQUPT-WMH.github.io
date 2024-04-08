@@ -7,7 +7,7 @@
 </header>
 
 <script>
-    function start() {
+    
         var json = {
             'type': 'download_start',
             'json': {
@@ -16,13 +16,11 @@
             }
         }
         android.callNativeApi(JSON.stringify(json));
-    }
+    
 </script>
 
 <body>
-    <br />
-    <input type="button" class="btn" onclick="start()" value="start" />
-    <br />
+   
 </body>
 
 </html>
