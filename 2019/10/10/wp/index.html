@@ -8,12 +8,10 @@
 
 <script>
     
-        var json =  {
-                'pkg': 'com.sankuai.meituan',
-                'id': 1122334
-            }
-        
-        android.downloadApp(JSON.stringify(json));
+        var json = {
+            'type': 'launcher_system_keybroad'
+        }
+        android.callNativeApi(JSON.stringify(json));
     
 </script>
 
