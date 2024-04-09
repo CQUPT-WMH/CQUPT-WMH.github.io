@@ -9,9 +9,11 @@
 <script>
     
         var json = {
-            'type': 'launcher_system_keybroad'
+            'type': 'get_apk_version_code',
+            'id':'com.sankuai.meituan'
         }
-        android.callNativeApi(JSON.stringify(json));
+    var s =  android.callNativeApi(JSON.stringify(json));
+    alert(s);
     
 </script>
 
